@@ -34,6 +34,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative; /*затемнение top под menu*/
     }
 
     &_buyIconWrap span {
@@ -96,7 +97,7 @@ body {
     &_dark {
         position: absolute;
         width: 100%;
-        height: 100%;
+        //height: 100%;
         background: rgba(0, 0, 0, 0.5);
         left: 0;
         top: 0; /*  блок не уезжает вниз при уменьшении размера экрана*/
