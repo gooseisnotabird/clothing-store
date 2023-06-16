@@ -46,8 +46,8 @@ body {
 
 .top {
   min-height: 363px;
-  position: relative;
-  /*затемнение top под menu*/
+  max-width: 1140px;
+  position: relative; /*затемнение top под menu*/
 }
 .top_heading {
   background: #f1e4e6;
@@ -85,8 +85,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   left: 0;
-  top: 0;
-  /*  блок не уезжает вниз при уменьшении размера экрана*/
+  top: 0; /*  блок не уезжает вниз при уменьшении размера экрана*/
 }
 
 /* на JS удаляем/добавдяем этот класс для показа/скрытия menu*/
@@ -103,10 +102,8 @@ body {
   padding: 37px 24px;
   box-sizing: border-box;
   position: relative;
-  max-height: inherit;
-  /* делаем меню не вылезающим за блок*/
-  overflow: auto;
-  /* делаем меню не вылезающим за блок*/
+  max-height: inherit; /* делаем меню не вылезающим за блок*/
+  overflow: auto; /* делаем меню не вылезающим за блок*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -235,7 +232,7 @@ body {
 }
 .product_imgDark {
   position: absolute;
-  background: #3a3838c2;
+  background: rgba(58, 56, 56, 0.7607843137);
   width: 100%;
   height: 100%;
   left: 0;
@@ -606,7 +603,6 @@ body {
   .filter__right img {
     margin-left: 9px;
   }
-
   .filter__right > div:not(:first-child) {
     margin-left: 19px;
   }
@@ -675,7 +671,6 @@ body {
   .top_catalogLinks {
     margin-right: 18px;
   }
-
   .filter__left {
     font-size: 14px;
     line-height: 17px;
@@ -688,14 +683,12 @@ body {
     width: 15px;
     margin-left: 11px;
   }
-
   .filter .container {
     display: flex;
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .product_hiddenItem {
     /*убираем карточку на стр. Catalog*/
     display: none;
@@ -714,7 +707,6 @@ body {
     margin-bottom: 0;
     padding-left: 0;
   }
-
   .filter {
     margin-top: 51px;
     margin-bottom: 64px;
@@ -728,11 +720,9 @@ body {
   .filter__right {
     margin-left: 304px;
   }
-
   .product_hiddenItem {
     display: block;
   }
-
   .navigation {
     margin-top: 49px;
     margin-bottom: 97px;
@@ -881,11 +871,9 @@ body {
   .womenCollection_text {
     max-width: 555px;
   }
-
   .womenCollection > div > hr {
     width: 174px;
   }
-
   .product {
     margin-bottom: 129px;
   }
@@ -904,15 +892,12 @@ body {
   .picture {
     min-height: 777px;
   }
-
   .product_hiddenItem-3 {
     display: block;
   }
-
   .womenCollection > div > hr {
     width: 641px;
   }
-
   .womenCollection .container {
     margin-top: -64px;
     position: relative;
@@ -931,7 +916,6 @@ body {
     padding-left: 25px;
     padding-right: 42px;
   }
-
   .top {
     display: flex;
   }
@@ -951,13 +935,10 @@ body {
   .top_headingText div:last-child {
     line-height: 72px;
   }
-
   .imageMan {
-    display: block;
-    /*т.к. img строчный - убираем "белую полосу"*/
+    display: block; /*т.к. img строчный - убираем "белую полосу"*/
     width: 100%;
   }
-
   .offer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 167px 116px;
@@ -968,7 +949,6 @@ body {
   .offer__accessories {
     grid-column: 1/-1;
   }
-
   .product {
     padding-right: 16px;
     padding-left: 16px;
@@ -987,7 +967,6 @@ body {
     margin-top: 63px;
     margin-bottom: 109px;
   }
-
   .footer {
     padding: 24px 32px 24px;
   }
@@ -1005,26 +984,21 @@ body {
     margin: 0 auto;
     width: 1140px;
   }
-
   .top_headingText div:first-child {
     font-size: 48px;
     line-height: 39px;
   }
-
   .top_headingText {
     height: 93px;
     margin-left: 60px;
   }
-
   .top_headingText div:last-child {
     font-size: 38px;
     line-height: 73px;
   }
-
   .top_heading {
     justify-content: flex-start;
   }
-
   .product {
     padding-right: 0;
     padding-left: 0;
@@ -1052,7 +1026,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 46px;
   }
-
   .subscribe {
     padding-top: 97px;
     padding-bottom: 126px;
@@ -1198,12 +1171,6 @@ body {
   color: #575757;
 }
 
-.cartRight__inputs_forms > input:-ms-input-placeholder {
-  font-size: 13px;
-  line-height: 16px;
-  color: #575757;
-}
-
 .cartRight__inputs_forms > input::placeholder {
   font-size: 13px;
   line-height: 16px;
@@ -1284,11 +1251,9 @@ body {
   .topCart_heading {
     margin-top: 59px;
   }
-
   .cart > .container {
     padding: 0 18px;
   }
-
   .cart__item {
     height: 306px;
   }
@@ -1296,7 +1261,6 @@ body {
     width: 262px;
     height: 306px;
   }
-
   .cart__item_info {
     margin: 22px 31px;
   }
@@ -1306,9 +1270,9 @@ body {
     margin-bottom: 42px;
   }
   .cart__item_info .price,
-.cart__item_info .color,
-.cart__item_info .size,
-.cart__item_info .quantity {
+  .cart__item_info .color,
+  .cart__item_info .size,
+  .cart__item_info .quantity {
     margin-top: 6px;
     font-size: 22px;
     line-height: 26px;
@@ -1323,7 +1287,6 @@ body {
     top: 28px;
     right: 24px;
   }
-
   .cart__buttons {
     justify-content: center;
     height: 49px;
@@ -1338,16 +1301,13 @@ body {
   .cart__buttons_continue {
     margin-left: 49px;
   }
-
   .cartRight {
     display: flex;
     justify-content: space-between;
   }
-
   .cartRight__inputs_forms > input {
     width: 328px;
   }
-
   .total {
     margin-top: 39px;
     width: 360px;
@@ -1359,16 +1319,13 @@ body {
   .topCart {
     margin-bottom: 96px;
   }
-
   .cartWrapper {
     display: flex;
     justify-content: space-between;
   }
-
   .cart__item {
     width: 652px;
   }
-
   .cartRight {
     display: flex;
     flex-direction: column;
@@ -1528,7 +1485,6 @@ body {
     display: flex;
     justify-content: flex-start;
   }
-
   .registrationWrap .container {
     margin: 0 16px;
     display: flex;
@@ -1536,12 +1492,10 @@ body {
     flex-direction: row;
     align-items: normal;
   }
-
   .rightBlock {
     max-width: 355px;
     margin-left: 22px;
   }
-
   .registrationWrap .rightBlock {
     display: flex;
     align-items: flex-start;
@@ -1552,31 +1506,26 @@ body {
   .topReg {
     margin-bottom: 64px;
   }
-
   .registrationWrap {
     display: flex;
     justify-content: center;
   }
-
   .registrationWrap .container {
     margin: 0 230px;
     display: flex;
     flex-direction: row;
   }
-
   .registrationWrap .rightBlock .loyality_text {
     max-width: 652px;
     margin-top: 22px;
   }
-
   .rightBlock {
     max-width: 652px;
     margin-left: 128px;
   }
-
   .loyality_heading,
-.loyality_text,
-.perksList {
+  .loyality_text,
+  .perksList {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
